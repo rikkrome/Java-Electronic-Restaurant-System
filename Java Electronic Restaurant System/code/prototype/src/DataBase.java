@@ -13,6 +13,8 @@ public class DataBase {
 	/*
 	 * 
 	 * 
+     
+     
 	 * "DELETE FROM `prototype`.`test` WHERE `test`.`id` = 5"?
 	 * DELETE TOP (1) FROM   mytable
 	 * DELETE TOP 1 FROM `OrderQueue` 
@@ -28,6 +30,10 @@ public class DataBase {
 		INSERT INTO `cooking`(`tableNumber`, `foodName`, `comments`, `status`)
 		SELECT * FROM OrderQueue
 		WHERE tableNumber = '2'
+     
+     * phpmy.cjtsabhtufj6.us-west-2.rds.amazonaws.com/prototype
+     * phpmy;
+     * phpmyadmin
 	 */
 	
 	public static String sendCode(String gencode) throws Exception{
@@ -624,10 +630,10 @@ DELETE FROM `billing` WHERE `id` = '3';
 		try{
 		String driver = "com.mysql.jdbc.Driver";
 		
-		String url = "jdbc:mysql://phpmy.cjtsabhtufj6.us-west-2.rds.amazonaws.com/prototype";
-//		String url = "jdbc:mysql://localhost/prototype";
-		String username = "phpmy";
-		String password = "phpmyadmin";
+		String url = "jdbc:mysql://xxxx.xxxxxxxxx.us-west-2.rds.amazonaws.com/xxxxx";
+//		String url = "jdbc:mysql://phpmy.cjtsabhtufj6.us-west-2.rds.amazonaws.com/prototype";
+		String username = "";
+		String password = "";
 		Class.forName(driver);
 		
 		Connection conn = DriverManager.getConnection(url, username, password);
